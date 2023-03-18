@@ -66,6 +66,8 @@ threadlessinject.threadlessInject(dll, export, pid, waitTime=wait, shellcodeByte
 
 As mentioned in the last programmatic example, when the shellcodeBytes arg is supplied, it must be the bytes of the actual shellcode to be injected, when calling threadlessinject from cmd it converts the raw or file arguments into the shellcode needed for execution.
 
+Also, for commandline usage, the -r and -f arguments are mutually exclusive (you cannot provide both at the same time.)
+
 ## Thanks
 
 [CCob](https://github.com/CCob) for the [ThreadlessInject](https://github.com/CCob/ThreadlessInject) project, which this is ported from
